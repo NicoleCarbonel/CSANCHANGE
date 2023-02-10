@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="WLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="start.html">Start a Petition</a></li>
+                    <li><a href="my.html">My Petition</a></li>
+                    <li><a href="browse.html">Browse Petition</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Start the Change, Be the Change, CSanChange</h1>
+        <p>CSanChange is an educational web movement to bring learner-powered systematic petitions to decision-making in CSANSCI.</p>
+        <a href="start.html" class="hero-btn">Start a Petition</a>
+    </div>    
+
+    </section>
+
+<!--------- Latest Petitions -------->
+
+    <Section class="petitions">
+        <h2>Latest Petition</h2>
+    </Section>
+
+
+    <div class="slider">
+        <div class="slider-wrapper flex">
+            <div class="slide flex">
+                <div class="slide-image slider-link prev"><img src="https://goranvrban.com/codepen/img3.jpg"><div class="overlay"></div></div>
+                <div class="slide-content">
+                    <div class="slide-date">01.02.2023.</div>
+                    <div class="slide-title">STRONGER SCHOOL SECURITY</div>
+                    <div class="slide-text">Schools need more security to keep students safe from today's evolving safety and security threats. The goal of all security measures should be to keep students safe. School security measures that keep this principle in mind will keep students safe and result in safer and resilient schools.</div>
+                    <a href="browse.html"><div class="slide-more">SIGN</div></a>
+                </div>	
+            </div>
+            <div class="slide flex">
+                <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img2.jpg"><div class="overlay"></div></div>
+                <div class="slide-content">
+                    <div class="slide-date">28.01.2023.</div>
+                    <div class="slide-title">QUIZLESS MONDAYS</div>
+                    <div class="slide-text">Mondays should not be a stressful day. Petition to not have any Quizzes on Mondays to ensure that each students will not focus their weekends on lessons therfore, give their time on theirselves. </div>
+                    <a href="browse.html"><div class="slide-more">SIGN</div></a>
+                </div>	
+            </div>	
+            <div class="slide flex">
+                <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img5.jpg"><div class="overlay"></div></div>
+                <div class="slide-content">
+                    <div class="slide-date">07.02.2023.</div>
+                    <div class="slide-title">NO HOMEWORK FRIDAYS</div>
+                    <div class="slide-text">Petitions to not have any homeworks every Fridays. Due to the reason homework on weekends affects the amount of quality time that the students have with their family and friends. </div>
+                    <a href="browse.html"><div class="slide-more">SIGN</div></a>
+                </div>	
+            </div>
+                <div class="slide flex">
+                <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img6.jpg"><div class="overlay"></div></div>
+                <div class="slide-content">
+                    <div class="slide-date">20.01.2023.</div>
+                    <div class="slide-title">LUNCH BREAK PROLONGATION</div>
+                    <div class="slide-text">Petitions to have a longer time alloted for lunch breaks. 30 minutes lunch break is not enough for the students to buy their meal at the school canteen and at the same time eat their lunch. </div>
+                    <a href="browse.html"><div class="slide-more">SIGN</div></a>
+             </div>	
+         </div>
+    </div>
+<div class="arrows">
+<a href="#" title="Previous" class="arrow slider-link prev"></a>
+<a href="#" title="Next" class="arrow slider-link next"></a>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="script.js"></script>
+
+<!--------- About Page -------->
+
+<section class="about">
+    <h2>About Us</h2>
+    <h3>With petitions that give voices to the students of City of San Jose Del Monte National Science Highschool, CSanChange is a learner-oriented 
+        platform for proposing change and creating benefecial impact through establishing petitions and campaigns</h3>
+</section>
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <img src="prag.png" alt="images">
+        </div>
+        <div class="about-col">
+            <h4>Start a Petition</h4>
+            <p>Starting a petition with CSanChange is simple. Simply follow our online process, linked below, and within minutes your petition will be live. Whether you act individually or on behalf of a class, CSanChange has the right tools and social media environment for your campaign.</p>
+            <a href="start.html" class="hero-btn red-btn">Start a petition</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="about-col1">
+            <h4>Build Support</h4>
+            <p>CSanChange provides a variety of tools to build support for the student's campaign. Social media channels are integrated into each petition while list building options are available with our management features.</p>
+            <a href="" class="hero-btn red-btn1">Tools to build with</a>
+        </div>
+        <div class="about-col1">
+            <img src="prag1.png" alt="images">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="about-col">
+            <img src="prag2.png" alt="images">
+        </div>
+        <div class="about-col">
+            <h4>Promote Campaigns</h4>
+            <p>CSanChange can deliver real results for your cause. We list a variety of testimonials which reflect both campaign successes and student's satisfaction with our features. Our aim is not simply to amplify the voices of individual students and groups but to deliver positive outcomes for our representatives.</p>
+            <a href="" class="hero-btn red-btn">Testimonials</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="about-col1">
+            <h4>Follow and Advocate Causes</h4>
+            <p>CSanChange is not just a website for supporting campaigns but to advocate causes in CSANSCI. This means that students can follow and connect with a variety of other members who have similar interests and values. CSanChange ecosystem encourages mutual sharing of ideas and support to facilitate positive outcomes.</p>
+            <a href="" class="hero-btn red-btn1">Petitions by Category</a>
+        </div>
+        <div class="about-col1">
+            <img src="prag3.png" alt="images">
+        </div>
+    </div>
+
+</section>
+
+
+<!--------- Footer -------->
+
+<footer class="footer">
+    <div class="container1">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Impact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Community Guidelines</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Guides</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!----------JavaScript for Toggle Menu -------->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>

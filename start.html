@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="start.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="WLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="start.html">Start a Petition</a></li>
+                    <li><a href="my.html">My Petition</a></li>
+                    <li><a href="browse.html">Browse Petition</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav> 
+
+        <div id="content">
+
+            <div id="createpet">
+    
+                <div class="headline-wrapper">
+                    <h1>Create a petition</h1>
+                    <div class="headline">
+                        <p>Create a powerful online petition in just minutes. Our system is flexible, customizable, and easy to use. Best of all, it's free!</p>
+                        <p>Start by filling out this form, and publish your petition.
+                        </p>
+                    </div>
+                </div>
+    
+    
+                <div class="createpet_form">
+    
+                    <form id="questionnaire-form" action="/start-petition" method="post">
+                        <fieldset>
+    
+                            <input type="hidden" name="jwt" value="9ML/xfEeDOjavOscE2UrQ2txZUl0YWlWcDRobklFMGlwSS82N0RaM1RYQk9rTXRMei9HS21tSXBLTktDMkVUMktDNEl1aHRFWk5nY2NraDlzVTFJN3VyWXpTd3NwR1FaUWluM29XZkh2dnNqWTNlM0F1NmpJNitzN1U2UXdIQjdwMnFnWDNlV2JId3diRk1FOERKSVc5c0JRZzdzb0g0SDQ1ajM4b3BOMTMzdUpGMlVTT3ppUGJJeGlKSTUxdlAwY0JaVDVhQVdMWEZGTi9Ub2ZKcWY1RHJXQStNcWxvVnVpb0ZiTzBuZmNYODJBMmJnMmQ0a0FMdVFpUzNmdnNreTFaaUZwVmNGVzkrZUJHREZsNlNyY2xXd0xBNUo3S3oyQUNCWWQ0b3JUZ2RpZnVTaFRHc0lvZFhyM0V6bTh3VGwvRUZsbEhqY2U1QzdydVVqT2hMSXA0cVBKaURYcWJrVWV5MG9RNmRZQ2ZXcVZVWE9QK1VOSkVJbkwrN0J6QXRqSjVoNElGQmZ1NmhiVHd4Rw==">
+    
+                            <section class="pet_title">
+    
+                                <label for="QuestionnaireForm_title" class="required">Petition title <span class="required">*</span></label>
+                                <p><i>What do you want to achieve?</i></p>
+                                <div>
+                                    <input name="QuestionnaireForm[title]" id="QuestionnaireForm_title" type="text" maxlength="150" />
+                                    <div class="errorMessage" id="QuestionnaireForm_title_em_" style="display:none"></div>
+                                </div>
+                            </section>
+
+                            <section class="pet_title">
+    
+                                <label for="QuestionnaireForm_title" class="required">Decision-maker<span class="required">*</span></label>
+                                <p><i>Who can make this happen?</i></p>
+                                <div>
+                                    <input name="QuestionnaireForm[title]" id="QuestionnaireForm_title" type="text" maxlength="150" />
+                                    <div class="errorMessage" id="QuestionnaireForm_title_em_" style="display:none"></div>
+                                </div>
+                            </section>
+    
+                            <section class="pet_title">
+                                <label for="QuestionnaireForm_name" class="required">Web address <span class="required">*</span></label>
+                                <p><i>Keep it short and include the most important words from your title.</i></p>
+                                <div class="pet_address">
+                                    https://nicolecarbonel.github.io/CSANCHANGE<span id="petition_url"></span> <a href="#" id="change_url" class="hidden" tabindex="-1">edit</a>
+    
+    
+                                    <input tabindex="-1" class="hidden" name="QuestionnaireForm[name]" id="QuestionnaireForm_name" type="text" maxlength="50" />
+                                    <div class="errorMessage" id="QuestionnaireForm_name_em_" style="display:none"></div>
+                                </div>
+                            </section>
+    
+                            <section class="pet_description">
+                                <label for="QuestionnaireForm_body" class="required">Petition text <span class="required">*</span></label>
+                                <p><i>Explain the problem you want to solve.</i>
+                                </p>
+                                <div>
+    
+                                    <textarea class="wysiwyg" name="QuestionnaireForm[body]" id="QuestionnaireForm_body"></textarea>
+                                    <div class="errorMessage" id="QuestionnaireForm_body_em_" style="display:none"></div>
+                                </div>
+                            </section>
+
+                            <section class="submit_btn buttons blue">
+                                <input id="js-submit-petition-delayed-image" type="submit" name="yt0" value="PUBLISH PETITION" />
+                                <div id="petition-creation" style="display:none;"></div>
+                            </section>
+                        </fieldset>
+    
+                    </form>
+                </div>
+                <aside style="
+        border: none;
+        margin-top: -130px;
+    ">
+                <h2>Create a Free Petition</h2>
+            </aside>
+            <aside>
+                <p>Your petition will do well here. Our petitions lets the student of CSANSCI be heard and we'll make sure your voice counts!</p>
+                <p>Want to see what your petition will look like? See a <a href="#" data-modal-id="sample_pet" class="sample-petition-button">sample
+          petition</a>.</p>
+
+            </aside>
+
+            <div id="sample_pet" class="modal" style="display:none">
+                <h1>Sample Petition</h1>
+                <img src="https://cdn.ipetitions.com/assets/v3/img/sample-pet.png">
+                <a class="close-modal">&#215;</a>
+            </div>
+        </div>
+
+    </div>
+    
+    </section>
+
+<!--------- Footer -------->
+
+<footer class="footer">
+    <div class="container1">
+        <div class="row1">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Impact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Community Guidelines</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Guides</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+<!----------JavaScript for Toggle Menu ---->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+</html>

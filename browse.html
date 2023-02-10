@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="browse.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="start.html">Start a Petition</a></li>
+                    <li><a href="my.html">My Petition</a></li>
+                    <li><a href="browse.html">Browse Petition</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+
+        <section class="about-us">
+            <h2>Discover Petitions</h2>
+    
+            <div class="row">
+                <div class="about-col">
+                    <div class="slide-image slider-link prev"><img src="https://goranvrban.com/codepen/img3.jpg"><div class="overlay"></div></div>
+                </div>
+                <div class="about-col">
+                    <h4>Stronger School Security</h4>
+                    <p>Schools need more security to keep students safe from today's evolving safety and security threats. The goal of all security measures should be to keep students safe. School security measures that keep this principle in mind will keep students safe and result in safer and resilient schools.</p>
+                    <a href="start.html" class="hero-btn red-btn">SIGN</a>
+                </div>
+            </div>
+        
+        
+            <div class="row">
+                <div class="about-col">
+                    <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img2.jpg"><div class="overlay"></div></div>
+                </div>
+                <div class="about-col">
+                    <h4>Quizless Mondays</h4>
+                    <p>Mondays should not be a stressful day. Petition to not have any Quizzes on Mondays to ensure that each students will not focus their weekends on lessons therfore, give their time on theirselves.</p>
+                    <a href="" class="hero-btn red-btn">SIGN</a>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="about-col">
+                    <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img5.jpg"><div class="overlay"></div></div>
+                </div>
+                <div class="about-col">
+                    <h4>No Homework Fridays</h4>
+                    <p>Petitions to not have any homeworks every Fridays. Due to the reason homework on weekends affects the amount of quality time that the students have with their family and friends. </p>
+                    <a href="" class="hero-btn red-btn">SIGN</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="about-col">
+                    <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img6.jpg"><div class="overlay"></div></div>
+                </div>
+                <div class="about-col">
+                    <h4>Lunch Break Prolongation</h4>
+                    <p>Petitions to have a longer time alloted for lunch breaks. 30 minutes lunch break is not enough for the students to buy their meal at the school canteen and at the same time eat their lunch. </p>
+                    <a href="" class="hero-btn red-btn">SIGN</a>
+                </div>
+            </div>
+        
+        </section>
+
+    </section>
+
+<!--------- Footer -------->
+
+<footer class="footer">
+    <div class="container1">
+        <div class="row1">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Impact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Community Guidelines</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Guides</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+
+
+<!----------JavaScript for Toggle Menu ---->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+</html>
